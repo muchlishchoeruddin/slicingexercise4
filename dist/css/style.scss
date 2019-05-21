@@ -122,11 +122,20 @@ a{
 		form{
 			input[type="text"]{
 				font-size:0.9em;
+				background-color:transparent;
+				width:100px;
+				border:1px solid transparent;
+				transition: all .3s ease;
+				outline: none;
 				padding:{
 					top:0.4em;
 					bottom:0.4em;
 					left:0.8em;
 					right:2.5em;
+				}
+				&:focus{
+					width:200px;
+					border:1px solid $primary;
 				}
 			}
 			button[type="submit"]{
@@ -481,7 +490,7 @@ header{
 	}
 	.award-winner{
 		&:last-child{
-			background-color:$dark;
+			background-color:$primary;
 			.wrap{
 				padding:{
 					top:2.5em;

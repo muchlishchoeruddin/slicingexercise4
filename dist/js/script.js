@@ -1,6 +1,4 @@
-$('.dropdown-md').click(function(){
-	$('.md-menu',this).toggleClass('dropdown-show');
-});
+
 $('.grid').isotope({
   itemSelector: '.grid-item',
   masonry: {

@@ -107,10 +107,19 @@ a {
 }
 .navpage .navbar form input[type=text] {
   font-size: 0.9em;
+  background-color: transparent;
+  width: 100px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  outline: none;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   padding-left: 0.8em;
   padding-right: 2.5em;
+}
+.navpage .navbar form input[type=text]:focus {
+  width: 200px;
+  border: 1px solid #00c8c8;
 }
 .navpage .navbar form button[type=submit] {
   position: absolute;
@@ -446,7 +455,7 @@ header .header-btn:hover {
   position: relative;
 }
 .semifooter .award-winner:last-child {
-  background-color: #333;
+  background-color: #00c8c8;
 }
 .semifooter .award-winner:last-child .wrap {
   padding-top: 2.5em;
