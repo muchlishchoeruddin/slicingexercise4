@@ -1,8 +1,10 @@
 $primary:#00c8c8;
 $dark:#333;
+a{
+	cursor: pointer;
+}
 .md-menu{
 	background-color:white;
-	margin-top:10px;
 	display: none;
 	box-shadow: 0px 8px 8px rgba(black,.5);
 	padding:{
@@ -82,6 +84,9 @@ $dark:#333;
 		}
 		.collapse{
 			&:not(.show){
+				.nav-link{
+					padding-bottom:15px;
+				}
 				.dropdown-md{
 					&:last-child{
 						.md-menu{
@@ -271,6 +276,7 @@ header{
 .product{
 	.filter{
 		a{
+			cursor: pointer;
 			color:#777;
 			font-weight: 600;
 			padding:{
@@ -283,12 +289,18 @@ header{
 			&:hover{
 				color:$primary;
 			}
+			@media(max-width: 567px){
+				font-size: 2vw;
+			}
+		}
+		.active{
+			color:$primary;
 		}
 	}
 	.grid {
 	  background: white;
 	  padding:20px;
-	  max-width: 1380px;
+	  max-width: 1380vw;
 	}
 
 	/* clear fix */
@@ -386,20 +398,35 @@ header{
 	  	}
 	}
 
-	.grid-item--width2 { width: 670px; }
-	.grid-item--height2 { height: 540px; }
+	.grid-item--width2 {
+		width: 670px;
+		@media(max-width: 773px){
+			width: 335px;
+			img{
+				height: 100%;
+			}
+		}
+	}
+	.grid-item--height2 {
+		height: 540px;
+		@media(max-width: 773px){
+			height: 335px;
+		}
+	}
 
 }
 .lookbook{
 	position:relative;
 	.information{
 		position:absolute;
-		width:225px;
+		width:15vw;
 		top:50px;
 		right: 50px;
+		font-size: 1vw;
 		text-align:right;
 		h2{
 			letter-spacing: 2px;
+			font-size: 2vw;
 			color:#333;
 		}
 		p{
@@ -424,6 +451,15 @@ header{
 				border:2px solid transparent;
 			}
 		}
+		@media(max-width: 992px){
+			font-size: 2vw;
+			width:40vw;
+			top:200px;
+			right:100px;
+			h2{
+				font-size: 4vw;
+			}
+		}
 	}
 }
 .semifooter{
@@ -438,6 +474,9 @@ header{
 		}
 	}
 	.award-winner{
+		&:last-child{
+			background-color:$primary;
+		}
 		background-color:$dark;
 		transition: all .2s ease;
 		font-size: 30px;
@@ -452,6 +491,12 @@ header{
 				top:1.5em;
 				bottom:1.5em;
 			}
+			a{
+				color:white;
+				&:hover{
+					color:$dark;
+				}
+			}
 		}
 		.icon{
 			position:absolute;
@@ -461,10 +506,6 @@ header{
 			i{
 				margin:10px;
 			}
-		}
-		&:hover{
-			background-color:$primary;
-			cursor: pointer;
 		}
 	}
 }
