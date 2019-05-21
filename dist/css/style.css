@@ -254,11 +254,6 @@ header .header-btn:hover {
 .product .filter a:hover {
   color: #00c8c8;
 }
-@media (max-width: 922px) {
-  .product .filter a {
-    font-size: 2vw;
-  }
-}
 .product .filter .active {
   color: #00c8c8;
 }
