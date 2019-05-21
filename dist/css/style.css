@@ -269,7 +269,7 @@ header .header-btn:hover {
 }
 @media (max-width: 440px) {
   .product .grid {
-    margin-left: -80px;
+    margin-left: -85px;
   }
 }
 .product .grid:after {
@@ -413,19 +413,20 @@ header .header-btn:hover {
 }
 @media (max-width: 992px) {
   .lookbook .information {
-    font-size: 2vw;
+    font-size: 2.8vw;
     width: 40vw;
     top: 200px;
-    right: 100px;
+    right: 10vw;
   }
   .lookbook .information h2 {
     font-size: 4vw;
   }
 }
-@media (max-width: 567px) {
+@media (max-width: 667px) {
   .lookbook .information {
-    right: 50px;
-    top: 100px;
+    right: 10vw;
+    font-size: 3.3vw;
+    top: 80px;
   }
 }
 
@@ -450,12 +451,18 @@ header .header-btn:hover {
   position: relative;
 }
 .semifooter .award-winner:last-child {
-  background-color: #00c8c8;
+  background-color: #333;
+}
+.semifooter .award-winner:last-child .wrap {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 .semifooter .award-winner .wrap {
   color: white;
   width: 100%;
   height: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
