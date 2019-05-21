@@ -264,6 +264,11 @@ header .header-btn:hover {
   padding: 20px;
   max-width: 1380vw;
 }
+@media (max-width: 440px) {
+  .product .grid {
+    margin-left: -100px;
+  }
+}
 .product .grid:after {
   content: "";
   display: block;
@@ -471,6 +476,20 @@ footer {
   padding-bottom: 1em;
   padding-left: 10em;
   padding-right: 10em;
+}
+@media (max-width: 910px) {
+  footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media (max-width: 625px) {
+  footer {
+    font-size: 2vw;
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

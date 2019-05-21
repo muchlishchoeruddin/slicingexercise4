@@ -301,6 +301,9 @@ header{
 	  background: white;
 	  padding:20px;
 	  max-width: 1380vw;
+	  @media(max-width: 440px){
+	  	margin-left:-100px;
+	  }
 	}
 
 	/* clear fix */
@@ -520,5 +523,17 @@ footer{
 		bottom:1em;
 		left:10em;
 		right:10em;
+	}
+	@media(max-width: 910px){
+		padding:{
+			top:1em;
+			bottom:1em;
+			left:1em;
+			right:1em;
+		}
+	}
+	@media(max-width: 625px){
+		font-size: 2vw;
+		height: 30px;
 	}
 }
